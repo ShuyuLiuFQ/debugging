@@ -1,11 +1,13 @@
+# Path to the CloudWatch events JSON file
+CLOUDWATCH_TIMELINE_JSON_PATH = '/home/shuyu/Documents/scripts/AWS/assets/auth-service/dev-20251030-02.json'
 # config.py
 # Configuration for cloudwatch-timeline-visualization
 
 
 # Duration in seconds to display on the timeline
-CLOUDWATCH_TIMELINE_DURATION_SECONDS = 60 * 60 * 3
+CLOUDWATCH_TIMELINE_DURATION_SECONDS = 60 * 60 * 2
 # Optional: Set the start time for the timeline (format: 'YYYY-MM-DD HH:MM:SS'), or set to None to use the earliest event
-CLOUDWATCH_TIMELINE_START_TIME = '2025-10-30 05:30:00'
+CLOUDWATCH_TIMELINE_START_TIME = None
 
 # Message filters and their colors (add up to 10)
 MESSAGE_FILTERS = [

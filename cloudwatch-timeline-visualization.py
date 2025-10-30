@@ -3,10 +3,10 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
-from config import CLOUDWATCH_TIMELINE_DURATION_SECONDS, CLOUDWATCH_TIMELINE_START_TIME, MESSAGE_FILTERS
+from config import CLOUDWATCH_TIMELINE_DURATION_SECONDS, CLOUDWATCH_TIMELINE_START_TIME, MESSAGE_FILTERS, CLOUDWATCH_TIMELINE_JSON_PATH
 
 # Load the JSON file
-with open('/home/shuyu/Documents/scripts/AWS/assets/auth-service/dev-20251030-01.json') as f:
+with open(CLOUDWATCH_TIMELINE_JSON_PATH) as f:
     data = json.load(f)
 
 # Extract all timestamps and convert to datetime
